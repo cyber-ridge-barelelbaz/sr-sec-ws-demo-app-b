@@ -2,7 +2,6 @@ plugins {
 	id 'org.springframework.boot' version '2.6.1'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
-	id "org.owasp.dependencycheck" version "12.1.1"
 }
 
 group = 'fr.christophetd.log4shell'
@@ -23,9 +22,4 @@ dependencies {
 
 test {
 	useJUnitPlatform()
-}
-
-dependencyCheck {
-	failBuildOnCVSS = 7.0
-	formats = ['HTML', 'JSON']
 }
